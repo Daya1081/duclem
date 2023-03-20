@@ -7,6 +7,7 @@
     <title>Tu LandingPage</title>
     <link rel="stylesheet" href="./Assets/css/estilos.css">
     <link rel="stylesheet" href="./Assets/css/all.min.css">
+    
 </head>
 <body>
     <header class="header_active">
@@ -19,15 +20,15 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Item1</a></li>
-                        <li><a href="#">Item2</a></li>
-                        <li><a href="#">Item3</a></li>
-                        <li><a href="#">Item4</a></li>
-                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#Inicio" class="Inicio active">Inicio</a></li>
+                        <li><a href="#Seccion2" class="Seccion2">Item2</a></li>
+                        <li><a href="#Seccion3" class="Seccion3">Item3</a></li>
+                        <li><a href="#Seccion4" class="Seccion4">Item4</a></li>
+                        <li><a href="#Seccion5" class="Seccion5">Item5</a></li>
+                        <li><a href="#Contactos" class="Contactos">Contactos</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="b_cotizar">Cotizar</a>
+                <a href="#Seccion7" class="b_cotizar">Cotizar</a>
                 <div class="socialMedia">
                     <a href="#">
                         <img src="./Assets/imagenes/socialMedia/facebook.png" alt="">
@@ -45,11 +46,14 @@
             </div>
 
         </div>
+        <script src="./jquery-3.6.3.min.js"></script>
+        <script src="./Assets/js/mijs.js"></script>
     </header>
     <main>
         <!--INICIO-->
         <!--Portada de inicio-->
-        <div class="containerPortada div_offset">
+        <a name="Inicio">
+        <div class="containerPortada div_offset" id="Inicio">
             <div class="cover">
                 <section class="text_cover">
                     <h1>
@@ -59,15 +63,17 @@
                         qui provident necessitatibus perferendis molestias delectus cupiditate sequi
                         voluptatibus harum atque aliquid perspiciatis at pariatur, impedit deleniti
                         suscipit id ullam.</p>
-                    <a href="#" class="b_text_cover b_text">Empezar</a>
+                    <a href="#Seccion7" class="b_text_cover b_text">Contáctanos</a>
                 </section>
                 <section class="image_cover">
                     <img src="./Assets/imagenes/cover/imagen1.png" alt="">
                 </section>
             </div>
         </div>
+        </a>
         <!--Seccion 2-->
-        <div class="container_seccion2 contenedor_card_primaria">
+        <a name="Seccion2">
+        <div class="container_seccion2 contenedor_card_primaria div_offset" id="Seccion2">
             <div class="seccion2 card_primaria">
                 <div class="text_seccion2 text_card_primaria">
                     <p>AQUI SE SUGIERE TEXTO DE GENERAR CONFIANZA</p>
@@ -92,8 +98,10 @@
                 </div>
             </div>
         </div>
+        </a>
         <!--seccion3-->
-        <div class="container_nosotros div_offset">
+        <a name="Seccion3">
+        <div class="container_nosotros div_offset" id="Seccion3">
             <div class="nosotros">
                 <div class="text_nosotros">
                     <h1>
@@ -102,7 +110,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil quibusdam provident fugiat, doloremque, blanditiis enim quae porro velit laudantium culpa est quo facere praesentium. Quaerat harum id vitae veniam.
                     </p>
-                    <a href="#" class="b_text-nosotros b_text">Saber más</a>
+                    <a href="#Seccion7" class="b_text-nosotros b_text">Contáctanos</a>
                 </div>
                 <div class="imagen_nosotros">
                     <img class="img1" src="./Assets/imagenes/nosotros/nosotros1.jpg" alt="">
@@ -110,8 +118,10 @@
                 </div>
             </div>
         </div>
+        </a>
         <!--seccion 4-->
-        <div class="container_seccion4 contenedor_card_primaria">
+        <a name="Seccion4">
+        <div class="container_seccion4 contenedor_card_primaria div_offset" id="Seccion4">
             <div class="seccion4 card_primaria">
                 <div class="text_seccion4 text_card_primaria">
                     <p>AQUI SE SUGIERE TEXTO DE GENERAR CONFIANZA</p>
@@ -181,8 +191,10 @@
                 </div>
             </div>
         </div>
+        </a>
         <!--seccion 5-->
-        <div class="container_seccion5 contenedor_card_primaria">
+        <a name="Seccion5">
+        <div class="container_seccion5 contenedor_card_primaria div_offset" id="Seccion5">
             <div class="seccion5 card_primaria">
                 <div class="text_seccion5 text_card_primaria">
                     <p>AQUI SE SUGIERE TEXTO DE GENERAR CONFIANZA</p>
@@ -228,8 +240,10 @@
                 </div>
             </div>
         </div>
+        </a>
         <!--seccion 6-->
-        <div class="container_seccion6 contenedor_card_primaria">
+        <a name="seccion6">
+        <div class="container_seccion6 contenedor_card_primaria div_offset" id="Seccion6">
             <div class="seccion6 card_primaria">
                 <div class="text_seccion6 text_card_primaria">
                     <p>AQUI SE SUGIERE TEXTO DE GENERAR CONFIANZA</p>
@@ -267,7 +281,9 @@
                 </div>
             </div>
         </div>
-        <div class="container_seccion7">
+        </a>
+        <a name="Seccion7">
+        <div class="container_seccion7 div_offset" id="Contactos">
             <div class="contenedor_mapa">
                 <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
@@ -300,6 +316,7 @@
                 </form>
             </div>
         </div>
+        </a>
     </main>
     <footer>
         <div class="container_footer">

@@ -6,6 +6,9 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior:smooth;
+}
 :root{
     --color_text-primary:#28B463;
     --color_text-secundary:#101E2C;
@@ -71,6 +74,9 @@ header{
     position: relative;
 }
 .menu nav ul li a:hover{
+    color: var(--color_text-primary);
+}
+.menu nav ul li a.active {
     color: var(--color_text-primary);
 }
 .b_cotizar{
@@ -481,4 +487,13 @@ footer .redessociales a {
 }
 footer .redessociales img {
     width: 20px;
+}
+nav ul li a.active:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: var(--main_color-primary);
+    position: absolute;
+    bottom: -4px;
+    border-radius: 20px;
 }

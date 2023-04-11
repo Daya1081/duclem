@@ -55,8 +55,8 @@ header{
 }
 .logo a img{
     width: 200px;
-    height: 70px;
-    object-fit: fill;
+    height: 90px;
+    object-fit: contain;
 }
 .menu{
     display: flex;
@@ -965,6 +965,7 @@ nav ul li a.active:before {
     }
     .bars__menu{
         display:block;
+        margin-right: 30px;
     }
     .menu{
         display:none;

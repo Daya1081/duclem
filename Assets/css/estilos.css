@@ -27,6 +27,8 @@ html{
     --text_title_family:'Merriweather', serif;
     --box_shadow-primary:0px 6px 50px -20px rgba(0,0,0,0.2);
 }
+
+/*STYLOS HEADER*/
 header{
     width: 100%;
     height: 100px;
@@ -107,7 +109,27 @@ header{
     width: 20px;
 }
 
-/*PORTADA DE INICIO*/
+#whatsapp-button {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px; /* Ajusta la posición como desees */
+    right: 20px; /* Ajusta la posición como desees */
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+#whatsapp-button img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+}
+
+/*STYLOS PORTADA DE INICIO*/
 
 .containerPortada{
     padding-top: 100px;
@@ -121,7 +143,6 @@ header{
     display: flex;
     align-items: center;
     padding: 0px 20px;
-
 }
 .text_cover{
     width: 100%;
@@ -162,6 +183,7 @@ h1{
 .image_cover img{
     width: 600px;
 }
+
 /*ESTILOS GENERALES CARDS*/
 .contenedor_card_primaria{
     padding-top: 100px;
@@ -222,7 +244,8 @@ h1{
     line-height: 1.5rem;
     text-align: center;
 }
-/*SECCION 3*/
+
+/*ESTILOS SECCION 3*/
 .container_nosotros{
     padding: 100px 0px;
     background: var(--background-color);
@@ -264,7 +287,8 @@ h1{
 .img1{
     margin-right: 20px;
 }
-/*seccion 4*/
+
+/*ESTILOS seccion 4*/
 .card_seccion4 img{
     width: 60px;
     height: 60px;
@@ -275,23 +299,20 @@ h1{
     padding-top: 4%;
 }
 .card_seccion4 ul li a{
-   
-   text-align: left;
-   color: var(--color_text-primary);
-}
-.card_seccion4 ul li{
-   
     text-align: left;
     color: var(--color_text-primary);
- }
+}
+.card_seccion4 ul li{
+    text-align: left;
+    color: var(--color_text-primary);
+}
 .card_seccion4 ul li a:hover{
     color: var(--main_color-primary);
- }
-
- .card_seccion4 h3{
+}
+.card_seccion4 h3{
     padding-top: 2%;
     color: var(--main_color-primary);
- }
+}
 .card_seccion4 i img{
     margin-top: 40px;
     width: 30px;
@@ -302,7 +323,8 @@ h1{
     text-align: left;
     line-height: 1.5rem;
 }
-/*seccion 5*/
+
+/*ESTILOS seccion 5*/
 .container_seccion5{
     background: var(--background-color);
 }
@@ -334,6 +356,8 @@ h1{
     font-weight: 600;
     margin-top: 2px;
 }
+
+/*ESTILOS SECCION 6*/
 .card_seccion6{
     max-width: 260px;
     border: none;
@@ -362,7 +386,8 @@ h1{
     color: var(--color_text-tertiary);
     margin-top: 4px;
 }
-/*SECCION 7*/
+
+/*ESTILOS SECCION 7*/
 .container_seccion7{
     width: 100%;
     display: flex;
@@ -421,15 +446,163 @@ h1{
     padding-bottom: 40px;
     color: var(--color_text-primary);
 }
-/*footer*/
+
+/*ESTILOS SECCION 8*/
+.container_seccion8{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor_blog{
+    width: 90%;
+    margin-top: 3%;
+    overflow: hidden;
+    position: relative;
+}
+.sliderBlog {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.cardblog {
+    flex: 0 0 31.5%; /* Ajusta el ancho de las tarjetas según tu diseño */
+    transition: transform 0.3s;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.card.active {
+    transform: scale(1.1);
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.full-content {
+    display: none;
+}
+.sliderControls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    display: none;
+}
+.prevButton,
+.nextButton {
+    width: 40px; 
+    height: 40px; 
+    background-color: var(--main_color-primary); 
+    color: #fff; 
+    font-size: 24px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px;
+}
+.contimgcard {
+    width: 100%;
+    margin-bottom: 8%;
+}
+.titlemodalblog{
+    margin-bottom: 4%;
+    color: var(--color_text-primary);
+    font-size: 34px;
+    text-align: center;
+}
+h3{
+    margin-bottom: 4%;
+    color: var(--color_text-primary);
+}
+.summary{
+    margin-bottom: 8%;
+}
+.stylelink {
+    color: var(--main_color-primary);
+    border: 1px solid var(--main_color-primary);
+    border-radius: 10px;
+    padding: 2%;
+}
+.stylelink:hover{
+    color: var(--color_text-primary);
+    border: 1px solid var(--color_text-primary);
+}
+.contimgcard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stylebackblog{
+    color: var(--color_text-primary);
+    border: 1px solid var(--color_text-primary);
+    border-radius: 10px;
+    padding: 2%;
+    margin: 4%;
+}
+.stylebackblog:hover{
+    color: var(--main_color-primary);
+    border: 1px solid var(--main_color-primary);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+/* Estilo para el modal BLOG*/
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+/* Estilo para el contenido del modal */
+.modal-content {
+    background-color: #fff; /* Fondo blanco */
+    width: 45%; /* Ancho personalizable */
+    margin: 10% auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-height: 80%;
+    overflow-y: auto;
+}
+.modal-content img{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.modal-content p{
+    font-size: 16px;
+    padding: 4%;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.closeblog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*ESTILOS footer*/
 footer {
     width: 100%;
     margin-top: 120px;
+    background: var(--background-color);
 }
 .container_footer {
     max-width: 1200px;
     margin: auto;
     padding: 0px 20px;
+    
 }
 .informacion_footer {
     display: flex;
@@ -545,6 +718,7 @@ nav ul li a.active:before {
     bottom: -4px;
     border-radius: 20px;
 }
+
 /*SLIDER*/
 .container-slider{
     width: 350px;
@@ -601,7 +775,6 @@ nav ul li a.active:before {
 }
 
 /*CLASES DEL SLIDER 2*/
-
 .slider2{
     display: flex;
     width: 800%;
@@ -622,7 +795,6 @@ nav ul li a.active:before {
     position: absolute;
     width: 40px;
     height: 40px;
-    /*background: rgba(255, 255, 255, 0.7);*/
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
@@ -663,7 +835,6 @@ nav ul li a.active:before {
 }
 
 /*CLASES DE SLIDER 3*/
-
 .slider3{
     display: flex;
     width: 400%;
@@ -830,7 +1001,6 @@ nav ul li a.active:before {
     height: 100%;
     object-fit: cover;
 }
-
 .cont-imagenesComprar{
     width: 100%;
     height: 25%;
@@ -864,6 +1034,7 @@ nav ul li a.active:before {
     width: 50%;
     object-fit: contain;
 }
+
 /*menu hamburguesa*/
 .bars__menu{
     width: 30px;
@@ -890,6 +1061,7 @@ nav ul li a.active:before {
 .activeline3__bars-menu{
     transform: rotate(-45deg) translate(-4px,2px);
 }
+
 /*modal*/
 .modal_mensaje-enviado{
     width: 100%;
@@ -904,6 +1076,11 @@ nav ul li a.active:before {
 }
 .modal_mensaje-enviado:target{
     display: block;
+}
+.prueba{
+    position: absolute;
+    width: 100%;
+    top: 45%;
 }
 .message {
     max-width: 600px;
@@ -929,6 +1106,8 @@ nav ul li a.active:before {
     border: 2px solid transparent;
     transition: all 300ms;
 }
+
+/*RESPONSIVIDAD*/
 @media screen and (max-width: 1200px){
     .image_cover img {
         width: 450px;
@@ -1054,7 +1233,7 @@ nav ul li a.active:before {
         flex-direction: column;
     }
     .cont-imagenesComprar {
-         height: auto; 
+        height: auto; 
         flex-wrap: wrap;
     }
     .descripcion {

@@ -18,7 +18,7 @@ html{
     --color_text-tertiary:#485663;
     --main_color-primary:#D98FB8 ; 
     --main_color-secondary:#FAEEDF;
-    --background-color: #FAF6F6;
+    --background-color: #Fff4f9;
     --lowText_font_size:16px;
     --text_size_title:40px;
     --text_title_card:24px;
@@ -119,6 +119,7 @@ header{
     border-radius: 50%;
     padding: 15px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    
 }
 #whatsapp-button img {
     width: 80px;
@@ -134,8 +135,12 @@ header{
 .containerPortada{
     padding-top: 100px;
     padding-bottom: 100px;
-    background:var(--main_color-secondary);
+    /*background:var(--main_color-secondary);*/
+    background: linear-gradient(45deg, #89085a, transparent);
+
 }
+
+
 .cover{
     max-width: 1200px;
     margin: auto;
@@ -147,41 +152,88 @@ header{
 .text_cover{
     width: 100%;
     padding-right: 150px;
+    z-index: 9;
+}
+.estilo{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    line-height: 4rem;
+    font-size: 3.5rem;
+    text-align: left;
+    text-rendering: optimizeLegibility;
 }
 h1{
     font-family:var(--text_title_family);
     font-size: 60px;
     color: var(--color_text-secundary);
+   
 }
+
 .text_cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    color: var(--color_text-tertiary);
-    font-size: 24px;
+    color: white;
+    font-size: 22px;
 }
 .b_text{
     display: block;
-    width: 150px;
+    width: 210px;
     margin-top: 40px;
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    color: white;
-    background: var(--main_color-primary);
+    color: black;
+    background: #ffd5ba;
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
 }
+.boton-3d {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a57e3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .boton-3d:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.texto-3d {
+    color: #a57e3c;;
+    letter-spacing: .005em;
+    text-shadow: 
+      -1px -1px 1px #efede3, 
+      0px 1px 0 #efede3, 
+      0px 2px 0 #efede3, 
+      0px 3px 0 #4e3300,
+      0px 3px 0 #4e3300;
+  }
+  .imagen-superpuesta {
+    z-index: 1; /* Z-index para controlar la superposición */
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+  }
+  
 .b_text:hover{
-    background: transparent;
+    background: var(--main_color-primary);
     border: 2px solid var(--main_color-primary);
-    color: var(--main_color-primary);
+    color: var(--main_color-secondary);
 }
 .image_cover{
     width: 100%;
+    z-index: 9;
 }
 .image_cover img{
-    width: 600px;
+    width: 500px;
 }
 
 /*ESTILOS GENERALES CARDS*/
@@ -213,11 +265,11 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .box_card-primaria{
     max-width: 350px;
-    padding: 60px 40px;
+    padding: 30px 40px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin: 14px;
@@ -244,12 +296,17 @@ h1{
     line-height: 1.5rem;
     text-align: center;
 }
-
+/*SECCION 2*/
+.container_seccion2{
+    padding: 130px 0px;
+    /*background: var(--background-color);
+    position: relative;*/
+}
 /*ESTILOS SECCION 3*/
 .container_nosotros{
-    padding: 100px 0px;
+    padding: 130px 0px;
     background: var(--background-color);
-    margin-top: 100px;
+    /*position: relative;*/
 }
 .nosotros{
     max-width: 1200px;
@@ -270,7 +327,7 @@ h1{
 }
 .text_nosotros p{
     font-size: var(--text_paragraph);
-    margin-top: 40px;
+    margin-top: 20px;
     color: var(--color_text-tertiary);
     line-height: 1.5rem;
 }
@@ -289,6 +346,11 @@ h1{
 }
 
 /*ESTILOS seccion 4*/
+.container_seccion4{
+    padding: 130px 0px;
+    /*background: var(--background-color);
+    position: relative;*/
+}
 .card_seccion4 img{
     width: 60px;
     height: 60px;
@@ -327,6 +389,8 @@ h1{
 /*ESTILOS seccion 5*/
 .container_seccion5{
     background: var(--background-color);
+    padding: 130px 0px;
+    /*position: relative;*/
 }
 .card_seccion5{
     width: 350px;
@@ -358,6 +422,11 @@ h1{
 }
 
 /*ESTILOS SECCION 6*/
+.container_seccion6{
+    /*background: var(--background-color);*/
+    padding: 130px 0px;
+    /*position: relative;*/
+}
 .card_seccion6{
     max-width: 260px;
     border: none;
@@ -392,7 +461,9 @@ h1{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
+    padding: 130px 0px;
+    /*position: relative;*/
     background: var(--background-color);
 }
 .contenedor_mapa{
@@ -452,13 +523,15 @@ h1{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 100px;
     justify-content: center;
     flex-direction: column;
+    padding: 130px 0px;
+    /*position: relative;*/
 }
+
 .contenedor_blog{
-    width: 90%;
-    margin-top: 3%;
+    width: 80%;
+    margin-top: 2%;
     overflow: hidden;
     position: relative;
 }
@@ -510,6 +583,8 @@ h1{
 .contimgcard {
     width: 100%;
     margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
 }
 .titlemodalblog{
     margin-bottom: 4%;
@@ -535,7 +610,7 @@ h3{
     border: 1px solid var(--color_text-primary);
 }
 .contimgcard img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
 }
@@ -595,7 +670,7 @@ h3{
 /*ESTILOS footer*/
 footer {
     width: 100%;
-    margin-top: 120px;
+    /*margin-top: 120px;*/
     background: var(--background-color);
 }
 .container_footer {
@@ -722,7 +797,7 @@ nav ul li a.active:before {
 /*SLIDER*/
 .container-slider{
     width: 350px;
-    height: 500px;
+    height: 430px;
     position: relative;
     overflow: hidden;
     position: relative;
@@ -736,7 +811,7 @@ nav ul li a.active:before {
 .slider{
     display: flex;
     width: 600%;
-    height: 500px;
+    height: 430px;
     margin-left: -100%;
 }
 .slider-section{
@@ -778,7 +853,7 @@ nav ul li a.active:before {
 .slider2{
     display: flex;
     width: 800%;
-    height: 500px;
+    height: 430px;
     margin-left: -100%;
 }
 .slider-section2{
@@ -837,8 +912,8 @@ nav ul li a.active:before {
 /*CLASES DE SLIDER 3*/
 .slider3{
     display: flex;
-    width: 400%;
-    height: 500px;
+    width: 500%;
+    height: 430px;
     margin-left: -100%;
 }
 .slider-section3{
@@ -919,7 +994,7 @@ nav ul li a.active:before {
 /* TARGETA DE PRESENTACION*/
 .container2{
     width: 100%;
-    height: 420px;
+    height: 430px;
     position: relative;
 }
 .card-container2{

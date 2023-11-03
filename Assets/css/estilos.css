@@ -1249,6 +1249,12 @@ nav ul li a.active:before {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .cardblog {
+        flex: 0 0 70%;
+    }
+    .modal-content {
+        width: 70%;
+    }
 }
 @media screen and (max-width: 768px){
     .cover {

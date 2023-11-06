@@ -1250,10 +1250,10 @@ nav ul li a.active:before {
         margin-bottom: 20px;
     }
     .cardblog {
-        flex: 0 0 70%;
+        flex: 0 0 90%;
     }
     .modal-content {
-        width: 70%;
+        width: 90%;
     }
 }
 @media screen and (max-width: 768px){

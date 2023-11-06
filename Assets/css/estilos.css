@@ -204,14 +204,9 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 .texto-3d {
-    color: #a57e3c;;
+    color: #ffd5ba;
     letter-spacing: .005em;
-    text-shadow: 
-      -1px -1px 1px #efede3, 
-      0px 1px 0 #efede3, 
-      0px 2px 0 #efede3, 
-      0px 3px 0 #4e3300,
-      0px 3px 0 #4e3300;
+    text-shadow: -1px -1px 1px #a57e3c, 0px 1px 0 #ffffff, 0px 2px 0 #ffffff, 0px 3px 0 #efefef, 0px 3px 0 #efefef;
   }
   .imagen-superpuesta {
     z-index: 1; /* Z-index para controlar la superposición */

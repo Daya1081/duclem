@@ -1254,6 +1254,7 @@ nav ul li a.active:before {
     }
     .modal-content {
         width: 90%;
+        margin: 25% auto;
     }
 }
 @media screen and (max-width: 768px){

@@ -534,6 +534,7 @@ h1{
     display: flex;
     overflow: hidden;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .cardblog {
     flex: 0 0 31.5%; /* Ajusta el ancho de las tarjetas según tu diseño */
